@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoe Shop</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    header{
+      background:black;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav{
+      background:#333;
+      padding:10px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-size:18px;
+    }
+
+    .hero{
+      background:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff') center/cover;
+      height:300px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      text-shadow:2px 2px 5px black;
+      font-size:40px;
+      font-weight:bold;
+    }
+
+    .products{
+      padding:40px;
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background:white;
+      width:250px;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 4px 8px rgba(0,0,0,0.2);
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:scale(1.05);
+    }
+
+    .card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .card h3{
+      margin:15px 0 10px;
+    }
+
+    .card p{
+      color:green;
+      font-size:20px;
+      margin-bottom:15px;
+    }
+
+    .card button{
+      background:black;
+      color:white;
+      border:none;
+      padding:10px 20px;
+      margin-bottom:20px;
+      cursor:pointer;
+      border-radius:5px;
+    }
+
+    .card button:hover{
+      background:#444;
+    }
+
+    footer{
+      background:black;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>STEPUP Shoe Shop</h1>
+    <p>Best Shoes for Every Style</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hero">
+    New Collection 2026
+  </div>
+
+  <section class="products">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Shoe">
+      <h3>Nike Air Max</h3>
+      <p>₱4,999</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Shoe">
+      <h3>Adidas Runner</h3>
+      <p>₱3,499</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5" alt="Shoe">
+      <h3>Puma Sport</h3>
+      <p>₱2,999</p>
+      <button>Buy Now</button>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 STEPUP Shoe Shop | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
